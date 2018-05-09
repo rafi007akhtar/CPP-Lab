@@ -1,4 +1,4 @@
-/** Divide two numbers and print the result. In case the denominator is 0, throw and exception */
+/** Divide two numbers and print the result. In case the denominator is 0, throw an exception */
 
 #include <iostream>
 using namespace std;
