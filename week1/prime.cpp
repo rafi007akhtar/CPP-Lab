@@ -1,20 +1,19 @@
 /** Check if or not a number is prime */
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
 bool isPrime(int n)
 {
     if (n < 2) return false;
-    if (n == 2) return true;
-    if (n%2 == 0) return false;
 
-    int half = n / 2;
-    for (int i = 3; i <= half; i++)
+    int square_root = sqrt(n);
+    for (int i = 2; i <= square_root; i++)
         if (n%i == 0) return false;
-    
-    return true;    
+
+    return true;
 }
 
 int main()
