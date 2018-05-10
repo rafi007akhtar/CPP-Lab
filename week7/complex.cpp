@@ -24,6 +24,7 @@ complex complex::operator + (complex c1)
     complex c;
     c.re = this->re + c1.re;
     c.im = this->im + c1.im;
+    return c;
 }
 
 void complex::display()
